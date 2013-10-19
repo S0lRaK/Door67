@@ -1,0 +1,31 @@
+﻿
+#Submenu
+{
+    width:446px;
+    height:200px;
+    position:static;
+    float:left;
+    border-width:medium;
+    border-style:solid;
+}
+
+#Artistas
+{
+    width:895px;
+    height:590px;
+    position:relative; 
+    float:left;
+    border-width:medium;
+    border-style:solid;
+}
+#tablaArtistas
+{
+    width:878px;
+    height:260px;
+}
+
+td
+{
+    width:300px;
+    height:300px;
+}
