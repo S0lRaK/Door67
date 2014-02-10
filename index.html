@@ -26,63 +26,42 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="img/favicon.png">
-  
+  <link rel="stylesheet" type="text/css" href="index.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" >
+        $(function () {
+            $('.carousel').carousel({
+                interval: 6000
+            });
+        });
+    </script>
 </head>
 
 <body>
 <div class="container">
 	<div class="row clearfix" style="padding-top:1%">
-		<div class="col-md-4 column" style="text-align:left">
-			<img alt="140x140" src="Recursos/logo.png" style="width:50%">   
+		<div class="col-md-3 column" style="text-align:left">
+			<img alt="140x140" src="Recursos/logo.png" style="width:117%;height:120px">   
 		</div>
-		<div class="col-md-8 column" >
-			<div class="carousel slide" id="carousel-752052">
-				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-752052">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-752052">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-752052" class="active">
-					</li>
-				</ol>
+		<div class="col-md-9 column" >
+			<div class="carousel slide s" id="carousel-752052">
 				<div class="carousel-inner">
 					<div class="item">
-						<img alt="" src="Recursos/logo original.jpg" style="width:22.1%">
+						<img alt="" src="Recursos/banner1.png" style="width:100%">
 						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/2" style="width:50%">
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
+							
 						</div>
 					</div>
 					<div class="item active">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/3" style="width:50%">
+						<img alt="" src="Recursos/banner2.jpg" style="width:100%">
 						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
+							
 						</div>
 					</div>
-				</div> <a class="left carousel-control" href="#carousel-752052" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-752052" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					
+				</div> 
 			</div>
 		</div>
 	</div>
@@ -151,41 +130,45 @@
 			</nav>
 		</div>
 	</div>
-	<div class="row clearfix">
+	<div class="row clearfix" style="height:441.1px">
 		<div class="col-md-12 column">
            
 		</div>
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<div class="row clearfix">
-				<div class="col-md-6 column">
-					 <span class="label label-default">Label</span>
+	<div class="row clearfix"  id="footer">
+		<div class="col-md-6 column" style="padding-top:14px">
+			<div class="row clearfix" >
+				<div class="col-md-3 column" style="padding-left:35px" >
+					CONTACT
 				</div>
-				<div class="col-md-6 column">
-					 <span class="label label-default">Label</span>
+				<div class="col-md-3 column">
+					 NEWSLETTER
+				</div>
+                <div class="col-md-6 column">
+					 
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-md-6 column" style="padding-top:7px">
 			<div class="row clearfix">
-				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
+                 <div class="col-md-2 column">
+					
+				</div>
+                 <div class="col-md-2 column">
+					<img alt="140x140" src="Recursos/logo_beatport.png" class="img-circle" width="52%">
+				</div>
+                 <div class="col-md-2 column">
+					<img alt="140x140" src="Recursos/logo_soundcloud.png" class="img-circle" width="51%">
 				</div>
 				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
+					
+                    <img alt="140x140" src="Recursos/logo_face.png" class="img-circle" width="50%">
 				</div>
 				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
+					<img alt="140x140" src="Recursos/icon_mixcloud.png" class="img-circle" width="51%">
 				</div>
 				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
-				</div>
-				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
-				</div>
-				<div class="col-md-2 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/" class="img-circle">
+					<img alt="140x140" src="Recursos/logo_twiter.svg" class="img-circle" width="51%">
 				</div>
 			</div>
 		</div>
