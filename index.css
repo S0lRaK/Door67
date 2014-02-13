@@ -1,14 +1,10 @@
 ﻿#footer 
 {
-    -moz-border-radius: 6px 6px 6px 6px;
-
-/*para Safari y Chrome*/
-
+  -moz-border-radius: 6px 6px 6px 6px;
   -webkit-border-radius: 6px 6px 6px 6px;
   font-size:15px;
   background-color:#101010;
   height:50px;
-  
 }
 body 
 {
@@ -24,9 +20,9 @@ textarea
      height:150px;
 }
 
-.txt_contact 
+.txt_email 
 {
-    width:400px;
+    width:402px;
 }
 
 .modal-footer

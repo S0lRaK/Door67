@@ -13,7 +13,6 @@
 	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -65,7 +64,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="row clearfix">
+	<div class="row clearfix" style="height:100%;min-height:363px">
 		<div class="col-md-12 column" style="padding:0px">
 			<nav class="navbar navbar-default navbar-inverse" role="navigation">
 				<!--<div class="navbar-header">
@@ -130,7 +129,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="row clearfix" style="height:441.1px">
+	<div class="row clearfix" style="height:100%;min-height:140px">
 		<div class="col-md-12 column">
            
 		</div>
@@ -139,64 +138,52 @@
 		<div class="col-md-6 column" style="padding-top:14px">
 			<div class="row clearfix" >
 				<div class="col-md-3 column" style="padding-left:27px" >
-					<label id="modal-755723" href="#modal-container-755723" role="button" class="btn" data-toggle="modal" style="padding:0px">CONTACT</label>
+					 CONTACT
+				</div>
+				<div class="col-md-3 column">
+                     <label id="modal-755723" href="#modal-container-755723" role="button" class="btn" data-toggle="modal" style="padding:0px">NEWSLETTER </label>
 			        <div class="modal fade" id="modal-container-755723" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				        <div class="modal-dialog">
 					        <div class="modal-content">
 						        <div class="modal-header">
 							         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 							        <h4 class="modal-title" id="myModalLabel">
-								        Contact
+								         Newsletter
 							        </h4>
 						        </div>
 						        <div class="modal-body">
                                     <div class="row clearfix">
                                         <div class="col-md-12">
-                                            door67recordings@gmail.com
-                                            <form action="mail.php" method="post">
+                                            Suscríbete a la newsletter para recibir las novedades mensuales del sello.
+                                             <br /><br />
+                                            <!--<form action="suscripcion.php" method="post" enctype="multipart/form-data">
                                                 <div class="row clearfix">
                                                     <div class="col-md-2">
-                                                        NAME
+                                                        Email
                                                     </div>
                                                     <div class="col-md-10" >
-                                                        <input type="text" id="name" class="txt_contact" />
-                                                    </div>
-                                                </div>
-                                                <div class="row clearfix" style="padding-top:6px">
-                                                    <div class="col-md-2">
-                                                        EMAIL
-                                                    </div>
-                                                    <div class="col-md-10" >
-                                                        <input type="text" id="email" class="txt_contact"/>
-                                                    </div>
-                                                </div>
-                                                <div class="row clearfix" style="padding-top:6px">
-                                                    <div class="col-md-2">
-                                                        SUBJECT
-                                                    </div>
-                                                    <div class="col-md-10" >
-                                                        <input type="text" id="subject" class="txt_contact"/>
-                                                    </div>
-                                                </div>
-                                                <div class="row clearfix" style="padding-top:6px">
-                                                    <div class="col-md-2">
-                                                        MESSAGE
-                                                    </div>
-                                                    <div class="col-md-10" >
-                                                        <textarea type="text"  id="message"  style="" ></textarea>
+                                                        <input type="text" id="email" class="txt_email" />
                                                     </div>
                                                 </div>
                                                 <div class="row clearfix" style="padding-top:13px">
                                                     <div class="col-md-9" >
                                                     </div>
                                                     <div class="col-md-2" >
-                                                        <button type="submit" class="btn btn-inverse" value="Enviar">Enviar</button>
+                                                        <button type="submit" class="btn btn-inverse" value="Enviar">Suscribirse</button>
                                                     </div>
                                                     <div class="col-md-1" >
                                                     </div>
                                                 </div>
                                                 
-                                            </form>
+                                            </form> -->
+                                            <a href="suscripcion.php?file=">
+                                                 <button class="btn btn-inverse" value="Enviar">Suscribirse</button>
+                                            </a>
+					                              
+                                                            Email
+                                                        
+                                                            <input type="text" id="email" class="txt_email" />
+                                                           
                                         </div>
                                     </div>
 						        </div>
@@ -208,9 +195,7 @@
 				        </div>
 				
 			        </div>
-				</div>
-				<div class="col-md-3 column">
-					 NEWSLETTER 
+					
 				</div>
                 <div class="col-md-6 column">
 					 
