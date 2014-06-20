@@ -11,6 +11,7 @@ body
     font-family:Verdana;
     color:#888888  ;
     background-color:#F8F8F8;
+    padding-top: 1%;
 }
 
 textarea
@@ -18,11 +19,6 @@ textarea
      resize: none;
      width:400px; 
      height:150px;
-}
-
-.txt_email 
-{
-    width:402px;
 }
 
 .modal-footer
@@ -52,4 +48,61 @@ button
 {
       background-color:#101010;
       color:#F8F8F8;
+}
+#img_logo{
+	width:117%;
+	height:120px;
+}
+.carousel-inner>.item>img{
+	width:100%;
+	margin-bottom: 1%;
+}
+#div_content_up{
+	height:100%;
+	min-height:358px;
+}
+#div_content_down{
+	height:100%;
+	min-height:135px;
+}
+#div_content_up>div{
+	padding: 0px;
+}
+/* part left of footer */
+#footer>div:first-child{
+	padding-top:14px;
+}
+/* part roight of footer */
+#footer>div:nth-child(2){
+	padding-top:7px;
+}
+
+#h5_contact{
+	margin-top:2px;
+	margin-left:25%;
+}
+/*--------------------------- CSS MODALS-----------------------------------------*/
+/* label modal newsletter */
+#modal-newsletter{
+	padding:0px;
+}
+/* */
+.modal-content{
+	height: 400px;
+}
+.modal-body{
+	height: 72%;
+}
+input[type='text']:focus {
+	background-color :#DDDCDC;
+	margin: 2%;
+	border: 2px inset #444242;
+	outline: 0px;
+}
+input[type='text']{
+	margin: 2%;
+	color: #444242;
+	font-size: 17px;
+	width:70%;
+	border-radius: 2px;
 }
