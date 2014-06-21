@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<!-- JavaScript files -->
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -104,13 +105,20 @@
 							                <h4 class="modal-title" id="myModalLabel">CONTACT</h4>
 						                </div>
 						                <div class="modal-body" id="modal_body_contact">
+						                	<div class="row clearfix">
+                                                <div class="col-md-12">
+                                                	<button id="btn_contact_general" class="btn btn-inverse btn-lg" >General</button>
+                                                	<button id="btn_contact_showcase" class="btn btn-inverse btn-lg" >Book showcase</button>
+                                                	<button id="btn_contact_demo" class="btn btn-inverse btn-lg" >Send demo</button>
+                                                </div>
+                                            </div>
                                             <div class="row clearfix">
                                                 <div class="col-md-12">
-                                                	<div id="stage" >
+                                                	<div id="stage">
 													    <div id="spinner">
-													        <div class="face1">1</div>
-													        <div class="face2">2</div>
-													        <div class="face3">3</div>
+													        <div id="face3">3</div>
+													        <div id="face2">2</div>
+													        <div id="face1">1</div>
 													    </div>
 													</div>
                                                 </div>
@@ -137,7 +145,7 @@
                                                 	<p>Subscribe to our newsletter to receive monthly updates about Döor67.</p>
 					                                <p>E-mail: <input type="text" id="input_email" class="txt_email" placeholder="example@mail.com" /> </p>
 					                                <a id="a_newsletter" href="suscripcion.php?file=">
-                                                        <button class="btn btn-inverse btn-lg" value="Enviar">Yes, please!</button>
+                                                        <button class="btn btn-inverse btn-lg">Yes, please!</button>
                                                     </a>
                                                 </div>
                                             </div>
