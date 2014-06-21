@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>		
 		<!-- Own filles -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/master.css">
         <script type="text/javascript" src="js/scripts.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -29,27 +29,27 @@
     </head>
     <body>
         <div id="page" class="container">
-	        <div class="row clearfix" style="padding-top:1%">
-		        <div id="logo" class="col-md-3 column" style="text-align:left">
-			        <img alt="140x140" src="img/logos/logo.png" style="width:117%;height:120px">   
+	        <div class="row clearfix" >
+		        <div id="logo" class="col-md-3 column">
+			        <img alt="140x140" id="img_logo" src="img/logos/logo.png">   
 		        </div>
 		        <div id="banner" class="col-md-9 column" >
 			        <div class="carousel slide s" id="carousel-752052">
 				        <div class="carousel-inner">
 					        <div class="item">
-						        <img alt="" src="img/banners/banner1.png" style="width:100%">
+						        <img alt="" src="img/banners/banner1.png" >
 						        <div class="carousel-caption"></div>
 					        </div>
 					        <div class="item active">
-						        <img alt="" src="img/banners/banner2.jpg" style="width:100%">
+						        <img alt="" src="img/banners/banner2.jpg" >
 						        <div class="carousel-caption"></div>
 					        </div>
 					    </div> 
 			        </div>
 		        </div>
 	        </div>
-	        <div class="row clearfix" style="height:100%;min-height:363px">
-		        <div class="col-md-12 column" style="padding:0px">
+	        <div class="row clearfix" id="div_content_up">
+		        <div class="col-md-12 column">
 			        <nav class="navbar navbar-default navbar-inverse" role="navigation">
 				    <!--<div class="navbar-header">
 			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">HOME</a>
@@ -84,17 +84,17 @@
 			        </nav>
 		        </div>
 	        </div>
-	        <div class="row clearfix" style="height:100%;min-height:140px">
+	        <div class="row clearfix" id="div_content_down">
 		        <div class="col-md-12 column">
                 </div>
 	        </div>
-	        <div class="row clearfix"  id="footer">
-		        <div class="col-md-6 column" style="padding-top:14px">
+	        <div class="row clearfix" id="footer">
+		        <div class="col-md-6 column">
 			        <div class="row clearfix" >
-				        <div class="col-md-3 column" style="padding-left:27px">CONTACT</div>
+				        <div class="col-md-3 column" ><h5 class="modal-title" id="h5_contact">CONTACT</h5></div>
 				        <div class="col-md-3 column">
-                            <label id="modal-755723" href="#modal-container-755723" role="button" class="btn" data-toggle="modal" style="padding:0px">NEWSLETTER </label>
-			                <div class="modal fade" id="modal-container-755723" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <label id="modal-newsletter" href="#modal-container-newsletter" role="button" class="btn" data-toggle="modal">NEWSLETTER </label>
+			                <div class="modal fade" id="modal-container-newsletter" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				                <div class="modal-dialog">
 					                <div class="modal-content">
 						                <div class="modal-header">
@@ -104,7 +104,7 @@
 						                <div class="modal-body">
                                             <div class="row clearfix">
                                                 <div class="col-md-12">Subscribe to our newsletter to receive monthly updates about Döor67.
-                                                    <br /><br />
+                                                    
                                                     <!--<form action="suscripcion.php" method="post" enctype="multipart/form-data">
                                                         <div class="row clearfix">
                                                             <div class="col-md-2">Email</div>
@@ -135,23 +135,23 @@
                         <div class="col-md-6 column"></div>
 			        </div>
 		        </div>
-		        <div class="col-md-6 column" style="padding-top:7px">
+		        <div class="col-md-6 column" >
 			        <div class="row clearfix">
                         <div class="col-md-6 column"></div>
                         <div class="col-md-1 column">
-					        <a href="http://www.beatport.com/label/door67-recordings/26168" target="_blank"><img alt="140x140" src="img/icons/logo_beatport.png" class="img-circle" width="200%"></a>
+					        <a href="http://www.beatport.com/label/door67-recordings/26168" target="_blank"><img alt="Beatport" src="img/icons/logo_beatport.png" class="img-circle" width="200%"></a>
 				        </div>
                         <div class="col-md-1 column">
-					        <a href="http://www.mixcloud.com/door/" target="_blank"><img alt="140x140" src="img/icons/icon_mixcloud.png" class="img-circle" width="190%"></a>
+					        <a href="http://www.mixcloud.com/door/" target="_blank"><img alt="Mixcloud" src="img/icons/icon_mixcloud.png" class="img-circle" width="190%"></a>
 				        </div>
 				        <div class="col-md-1 column">
-				        	<a href="http://soundcloud.com/door67" target="_blank"><img alt="140x140" src="img/icons/logo_soundcloud.png" class="img-circle" width="200%"></a>
+				        	<a href="http://soundcloud.com/door67" target="_blank"><img alt="Soundcloud" src="img/icons/logo_soundcloud.png" class="img-circle" width="200%"></a>
 				        </div>
 				        <div class="col-md-1 column">
-					         <a href="https://twitter.com/#!/door671" target="_blank"><img alt="140x140" src="img/icons/logo_twiter.svg" class="img-circle" width="190%"></a>
+					         <a href="https://twitter.com/#!/door671" target="_blank"><img alt="Twitter" src="img/icons/logo_twiter.svg" class="img-circle" width="190%"></a>
 				        </div>
 				        <div class="col-md-1 column">
-				        	<a href="http://www.facebook.com/Door67" target="_blank"><img alt="140x140" src="img/icons/logo_face.png" class="img-circle" width="187%"></a>
+				        	<a href="http://www.facebook.com/Door67" target="_blank"><img alt="Facebook" src="img/icons/facebook41.svg" class="img-circle" width="187%"></a>
 				        </div>
                         <div class="col-md-1 column"></div>
 			        </div>
