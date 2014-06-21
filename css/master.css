@@ -1,7 +1,7 @@
 ﻿body 
 {
     font-family:Verdana;
-    color:#888888  ;
+    /*color:#888888  ;*/
     background-color:#F8F8F8;
     padding-top: 1%;
 }
@@ -31,15 +31,13 @@
 }
 
 /* Modal contact */
-textarea
-{
+textarea{
      resize: none;
      width:400px; 
      height:150px;
 }
 
-button
-{
+button{
       background-color:#101010;
       color:#F8F8F8;
 }
