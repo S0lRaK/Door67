@@ -4,7 +4,6 @@
 }
 
 .modal-body{
-	
 	background-color:#F8F8F8;
     padding-top:0px;
     padding-bottom:0px;
@@ -43,4 +42,17 @@
 #modal_body_newsletter{
 	padding: 5% 4%;
 	height: 40%;
+}
+
+/*------------------------------ MODAL CONTACT ------------------------------------*/
+#modal-contact{
+	padding: 0px;
+}
+#modal_body_contact{
+	padding: 5% 4%;
+	height: 40%;
+}
+#stage{
+	width: 100%;
+	height: 200px;
 }
