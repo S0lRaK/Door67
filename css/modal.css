@@ -1,19 +1,10 @@
-/* label modal newsletter */
-#modal-newsletter{
-	padding:0px;
-}
-
-.modal-content{
-	height: 400px;
-}
-
 .modal-header
 {
     background-color:#101010;
 }
 
 .modal-body{
-	height: 72%;
+	
 	background-color:#F8F8F8;
     padding-top:0px;
     padding-bottom:0px;
@@ -22,25 +13,34 @@
 .modal-footer
 {
     background-color:#101010;
+    margin-top: 0px;
 }
-
-input[type='text']:focus {
-	background-color :#DDDCDC;
-	margin: 2%;
-	border: 2px inset #444242;
-	outline: 0px;
-}
-
-input[type='text']{
-	margin: 2%;
-	color: #444242;
-	font-size: 17px;
-	width:70%;
-	border-radius: 2px;
-}
-
+/* Boton cerrar modal*/
 .close
 {
     background-color:#F8F8F8;
     color:#F8F8F8;
+}
+.close:hover
+{
+    color:white;
+}
+
+/* --------------------------MODAL NEWSLETTER ------------------------------------*/
+/* label modal newsletter */
+#modal-newsletter{
+	padding:0px;
+}
+/* button yes please newsletter*/
+#a_newsletter{
+	margin-left:37%;
+}
+/* input newsletter*/
+#input_email{
+	margin: 2%;
+	width:70%;
+}
+#modal_body_newsletter{
+	padding: 5% 4%;
+	height: 40%;
 }
