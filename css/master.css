@@ -53,33 +53,4 @@ textarea
      height:150px;
 }
 
-#spinner div {
-    position: absolute;
-    width: 320px;
-    height: 320px;
-    border: 1px solid #ccc;
-    background: rgba(255,255,255, 1);
-    text-align: center;
-    line-height: 120px;
-    font-size: 100px;
-  }
 
-  #face1 { -webkit-transform: translateZ(160px);}
-  #face2 { -webkit-transform: rotateY(90deg) translateZ(160px);}
-  #face3 { -webkit-transform: rotateY(180deg)  translateZ(160px);}
-  
-
-@-webkit-keyframes onetotwo {
-    from,to  {                                                    }
-    100%      { -webkit-transform: rotateY(-90deg);                }
-}
-
-.onetotwo {
-    -webkit-animation-name: onetotwo;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-direction: normal;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 160px 160px 0;
-}

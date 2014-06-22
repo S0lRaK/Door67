@@ -45,14 +45,50 @@
 }
 
 /*------------------------------ MODAL CONTACT ------------------------------------*/
+#modal_dialog_contact{
+	height: 500px;
+	width: 800px !important;
+}
+/* label modal contact */
 #modal-contact{
 	padding: 0px;
 }
 #modal_body_contact{
-	padding: 5% 4%;
-	height: 40%;
+	padding: 5% 17.5%;
+	height: 500px;
 }
 #stage{
 	width: 100%;
-	height: 200px;
+	height: 400px;
+}
+
+#spinner div {
+    position: absolute;
+    width: 520px;
+    height: 390px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255, 1);
+    text-align: center;
+    line-height: 120px;
+    font-size: 50px;
+  }
+
+  #face1 { -webkit-transform: translateZ(260px);}
+  #face2 { -webkit-transform: rotateY(90deg) translateZ(260px);}
+  #face3 { -webkit-transform: rotateY(180deg)  translateZ(260px);}
+  
+
+@-webkit-keyframes turnRight {
+    from,to  {                                                    }
+    100%      { -webkit-transform: rotateY(-90deg);                }
+}
+
+.turnRight {
+    -webkit-animation-name: turnRight;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-direction: normal;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 260px 260px 0;
 }
