@@ -1,27 +1,25 @@
 /* label modal newsletter */
-#modal-newsletter{
+#modal-newsletter {
 	padding:0px;
 }
 
-.modal-content{
+.modal-content {
 	height: 400px;
 }
 
-.modal-header
-{
-    background-color:#101010;
+.modal-header {
+    background-color:#222;
 }
 
-.modal-body{
+.modal-body {
 	height: 72%;
 	background-color:#F8F8F8;
     padding-top:0px;
     padding-bottom:0px;
 }
 
-.modal-footer
-{
-    background-color:#101010;
+.modal-footer {
+    background-color:#222;
 }
 
 input[type='text']:focus {
@@ -31,7 +29,7 @@ input[type='text']:focus {
 	outline: 0px;
 }
 
-input[type='text']{
+input[type='text'] {
 	margin: 2%;
 	color: #444242;
 	font-size: 17px;
@@ -39,8 +37,19 @@ input[type='text']{
 	border-radius: 2px;
 }
 
-.close
-{
+.close {
     background-color:#F8F8F8;
     color:#F8F8F8;
+}
+
+button {
+	background-color:#222;
+	color: #F8F8F8;
+}
+
+/* CONTACT */
+textarea {
+     resize: none;
+     width:400px; 
+     height:150px;
 }
