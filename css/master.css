@@ -26,6 +26,10 @@ button
 .btn:hover{
 	color:white !important;
 }
+.btn:focus{
+	color: #999;
+	outline: 0px;
+}
 /* LOGO */
 #img_logo{
 	width:117%;

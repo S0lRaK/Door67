@@ -11,7 +11,7 @@ $(document).ready(function(){
 					$("#spinner").removeClass("turnRight");
 					$("#face1").html("General");
 					btn_3D_Cick();
-				}, 2000);
+				}, 1000);
 			}
 			else if($(this).attr("id") == "btn_contact_showcase"){
 				$("#face2").html("ShowCase");
@@ -19,7 +19,7 @@ $(document).ready(function(){
 					$("#spinner").removeClass("turnRight");
 					$("#face1").html("ShowCase");
 					btn_3D_Cick();
-				}, 2000);
+				}, 1000);
 			}
 			else if($(this).attr("id") == "btn_contact_demo"){
 				$("#face2").html("Send Demo");
@@ -27,7 +27,7 @@ $(document).ready(function(){
 					$("#spinner").removeClass("turnRight");
 					$("#face1").html("Send Demo");
 					btn_3D_Cick();
-				}, 2000);
+				}, 1000);
 			}
 			
 		});
