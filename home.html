@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<!-- JavaScript files -->
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -94,7 +95,66 @@
 	        <div class="row clearfix" id="footer">
 		        <div class="col-md-6 column">
 			        <div class="row clearfix" >
-				        <div class="col-md-3 column"><h5 class="modal-title" id="h5_contact">CONTACT</h5></div>
+				        <div class="col-md-3 column">
+				        	<label id="modal-contact" href="#modal-container-contact" role="button" class="btn" data-toggle="modal">CONTACT</label>
+			                <div class="modal fade" id="modal-container-contact" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				                <div class="modal-dialog" id="modal_dialog_contact">
+					                <div class="modal-content" id="modal_content_contact">
+						                <div class="modal-header">
+							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							                <h4 class="modal-title" id="myModalLabel">CONTACT</h4>
+						                </div>
+						                <div class="modal-body" id="modal_body_contact">
+						                	<div class="row clearfix">
+                                                <div class="col-md-12">
+                                                	<button id="btn_contact_general" class="btn btn-inverse btn-lg" >General</button>
+                                                	<button id="btn_contact_showcase" class="btn btn-inverse btn-lg btn_3d" >Book showcase</button>
+                                                	<button id="btn_contact_demo" class="btn btn-inverse btn-lg btn_3d" >Send demo</button>
+                                                </div>
+                                            </div>
+                                            <div class="row clearfix">
+                                                <div class="col-md-12">
+                                                	<div id="stage">
+													    <div id="spinner">
+													        <div id="face2"></div>
+													        <div id="face1">
+											        			<h1>General</h1>
+											        			<div class="row_form_general">
+											        				<label>
+											        					Name
+										        					</label>
+										        					<input type="text"/>
+										        				</div>
+											        			<div class="row_form_general">
+											        				<label>
+											        					Email
+										        					</label>
+										        					<input type="text"/>
+									        					</div>
+											        			<div class="row_form_general">
+											        				<label>
+											        					Subject
+										        					</label>
+										        					<input type="text"/>
+									        					</div>
+											        			<div class="row_form_textarea">
+											        				<label >
+											        					Messaje
+										        					</label>
+										        					<textarea rows="10" cols="50"></textarea>
+									        					</div>
+												        	</div>
+													    </div>
+													</div>
+                                                </div>
+                                            </div>
+						                </div>
+						                <div class="modal-footer"></div>
+					                </div>
+				                </div>
+				            </div>
+				        	
+			        	</div>
 				        <div class="col-md-3 column">
                             <label id="modal-newsletter" href="#modal-container-newsletter" role="button" class="btn" data-toggle="modal">NEWSLETTER</label>
 			                <div class="modal fade" id="modal-container-newsletter" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -104,28 +164,14 @@
 							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 							                <h4 class="modal-title" id="myModalLabel">Newsletter</h4>
 						                </div>
-						                <div class="modal-body">
+						                <div class="modal-body" id="modal_body_newsletter">
                                             <div class="row clearfix">
-                                                <div class="col-md-12">Subscribe to our newsletter to receive monthly updates about Döor67.
-                                                    <!--<form action="suscripcion.php" method="post" enctype="multipart/form-data">
-                                                        <div class="row clearfix">
-                                                            <div class="col-md-2">Email</div>
-                                                            <div class="col-md-10">
-                                                                <input type="text" id="email" class="txt_email" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="row clearfix" style="padding-top:13px">
-                                                            <div class="col-md-9"></div>
-                                                            <div class="col-md-2" >
-                                                                <button type="submit" class="btn btn-inverse" value="Enviar">Suscribirse</button>
-                                                            </div>
-                                                            <div class="col-md-1"></div>
-                                                        </div>
-                                                    </form> -->
-                                                    <a href="suscripcion.php?file=">
-                                                        <button class="btn btn-inverse" value="Enviar">Yes, please!</button>
+                                                <div class="col-md-12">
+                                                	<p>Subscribe to our newsletter to receive monthly updates about Döor67.</p>
+					                                <p>E-mail: <input type="text" id="input_email" class="txt_email" placeholder="example@mail.com" /> </p>
+					                                <a id="a_newsletter" href="suscripcion.php?file=">
+                                                        <button class="btn btn-inverse btn-lg">Yes, please!</button>
                                                     </a>
-					                                E-mail: <input type="text" id="email" class="txt_email" />
                                                 </div>
                                             </div>
 						                </div>

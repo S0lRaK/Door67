@@ -1,55 +1,133 @@
-/* label modal newsletter */
-#modal-newsletter {
-	padding:0px;
-}
-
 .modal-content {
 	height: 400px;
 }
-
 .modal-header {
     background-color:#222;
 }
-
 .modal-body {
 	height: 72%;
 	background-color:#F8F8F8;
     padding-top:0px;
     padding-bottom:0px;
 }
-
 .modal-footer {
     background-color:#222;
+    /*margin-top: 0px;*/
 }
-
-input[type='text']:focus {
-	background-color :#DDDCDC;
-	margin: 2%;
-	border: 2px inset #444242;
-	outline: 0px;
-}
-
-input[type='text'] {
-	margin: 2%;
-	color: #444242;
-	font-size: 17px;
-	width:70%;
-	border-radius: 2px;
-}
-
+/* Button close modal*/
 .close {
-    background-color:#F8F8F8;
+    background-color:#222;
     color:#F8F8F8;
 }
-
-button {
-	background-color:#222;
-	color: #F8F8F8;
+.close:hover {
+    color:white;
 }
+/*------------------------------ NEWSLETTER ------------------------------------*/
+/* Label modal newsletter */
+#modal-newsletter {
+	padding:0px;
+}
+/* button "Yes, please!" */
+#a_newsletter {
+	margin-left:37%;
+}
+#input_email {
+	margin: 2%;
+	width:70%;
+}
+#modal_body_newsletter {
+	padding: 5% 4%;
+	height: 40%;
+}
+/*------------------------------ CONTACT ------------------------------------*/
+/*----- common -----*/
+#modal_dialog_contact {
+	height: 500px;
+	width: 800px !important;
+}
+/* label modal contact */
+#modal-contact {
+	padding: 0px;
+}
+#modal_content_contact {
+	
+}
+#modal_body_contact {
+	padding: 3% 17.5%;
+	height: 500px;
+}
+#modal_body_contact > .row > .col-md-12 {
+	text-align: center;
+}
+#stage {
+	width: 100%;
+	height: 400px;
+	margin-top: 1%;
+}
+/*----- 3D transition -----*/
+#spinner div {
+    position: absolute;
+    width: 100%;
+    height: 390px;
+    border: 1px solid #101010;
+    background-color: #101010;
+    text-align: center;
+    line-height: 120px;
+    font-size: 17px;
+  }
 
-/* CONTACT */
-textarea {
-     resize: none;
-     width:400px; 
-     height:150px;
+  #face1 { -webkit-transform: translateZ(260px);}
+  #face2 { -webkit-transform: rotateY(90deg) translateZ(260px);}
+  #face3 { -webkit-transform: rotateY(180deg)  translateZ(260px);}
+  
+
+@-webkit-keyframes turnRight {
+    from,to  {                                                    }
+    100%      { -webkit-transform: rotateY(-90deg);                }
+}
+/* class of cube animation start */
+.turnRight {
+    -webkit-animation-name: turnRight;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 260px 260px 0;
+}
+/* row of form general contact*/
+.row_form_general {
+	position: relative !important;
+	height: 45px !important;
+	line-height: 22.5px !important;
+	text-align: left !important;
+	padding: 1% 4%;
+}
+.row_form_general>input[type='text'] {
+	width: 77%;
+}
+.row_form_general>label {
+	width: 20%;
+}
+/* Last row of form genera contact*/
+.row_form_textarea {
+	height: 170px !important;
+	position: relative !important;
+	line-height: 85px !important;
+	text-align: left !important;
+	padding: 1% 4%;
+}
+.row_form_textarea > label {
+	position: absolute;
+	top: 0px;
+	height: 20px;
+	width: 20%;
+}
+.row_form_textarea > textarea {
+	position: absolute;
+	top: 20px;
+	left:23.5%;
+	width: 71%;
+	padding: 1% !important;
+	font-size: 17px !important;
 }
