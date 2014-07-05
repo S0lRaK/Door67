@@ -1,31 +1,58 @@
 ﻿body 
 {
     font-family:Verdana;
-    color:#999; 
+    color:#999;
     background-color:#F8F8F8;
     padding-top: 1%;
 }
-
+/* INPUTS */
+input[type='text']{
+	color: #444242;
+	font-size: 17px;
+	border-radius: 2px;
+	padding: 2px;
+}
+input[type='text']:focus {
+	background-color :#DDDCDC;
+	border: 2px inset #444242;
+	outline: 0px;
+}
+/* BUTTON */
+button
+{
+      background-color:#101010;
+      color:#999;
+}
+.btn:hover{
+	color:white !important;
+}
+.btn:focus{
+	color: #999;
+	outline: 0px;
+}
+/* LOGO */
 #img_logo{
 	width:117%;
 	height:120px;
 }
-
+/* BANNER */
 .carousel-inner>.item>img{
 	width:100%;
 	margin-bottom: 1%;
 }
-
-#menu{
-	height:100%;
-	min-height:358px;
-}
-
+/* Contenedor NAVBAR*/
 #menu>div{
 	padding: 0px;
 }
-
+/*Contenedor General*/
 #content{
 	height:100%;
-	min-height:135px;
+	min-height:415px;
+}
+/* Modal contact */
+textarea
+{
+     resize: none;
+     width:400px; 
+     height:150px;
 }
