@@ -6,9 +6,8 @@
 }
 /* Contenedor General */
 #content {
-	height: 100%;
-	min-height: 415px;
-	background-color: #F8F8F8;
+	min-height: 500px;
+	border-bottom: 2px solid #222;
 }
 #img_logo {
 	width: 117%;
@@ -20,8 +19,8 @@
 	margin-bottom: 1%;
 }
 /* Contenedor NAVBAR */
-#menu>div {
-	padding: 0px;
+#menu>div>nav {
+	background-color: #222;
 }
 #videoBackground {
 	height: 100%;
@@ -51,7 +50,48 @@ button {
 	color: #999;
 	outline: 0px;
 }
-
+/*-------------------- RELEASES --------------------*/
+/* Home */
+#releases {
+	height: 420px;
+	clear: both;
+	float: left;
+	padding-left: 20px;
+}
+#releases img {
+	height: 200px;
+	width: 200px;
+}
+.frontRelease {
+	clear: both;
+	float: left;
+}
+.infoRelease {
+	float: left;
+}
+.titleRelease {
+	clear: both;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+.artistRelease {
+	clear: both;
+	float: left;
+	font-size: 10px;
+	margin-bottom: 2px;
+}
+#lastRelease {
+	position: relative;
+	clear: both;
+	float: left;
+	margin-bottom: 5px;
+}
+#lastRelease2 {
+	clear: both;
+	float: left;
+}
 /* Modal contact 
 textarea {
      resize: none;
