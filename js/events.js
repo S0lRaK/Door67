@@ -53,4 +53,9 @@ $(document).ready(function(){
 			$("#face1").html("General");
 		}, 2000);
 	});*/
+
+// MAIN VIDEO
+/*
+	<iframe class="embed-responsive-item" id="videoBackground" src="http://www.youtube.com/embed/g0NHDmvkc78?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;html5=1&amp;allowfullscreen=true&amp;wmode=transparent" allowfullscreen></iframe>
+*/	
 });
