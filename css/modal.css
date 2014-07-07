@@ -1,5 +1,5 @@
 .modal-content {
-	height: 400px;
+	/*height: 400px;*/
 }
 .modal-header {
     background-color:#222;
@@ -12,7 +12,7 @@
 }
 .modal-footer {
     background-color:#222;
-    /*margin-top: 0px;*/
+    margin-top: 0px;
 }
 /* Button close modal*/
 .close {
@@ -67,19 +67,16 @@
 /*----- 3D transition -----*/
 #spinner div {
     position: absolute;
-    width: 100%;
+    width: 518px;
     height: 390px;
-    border: 1px solid #101010;
     background-color: #101010;
     text-align: center;
     line-height: 120px;
     font-size: 17px;
   }
 
-  #face1 { -webkit-transform: translateZ(260px);}
-  #face2 { -webkit-transform: rotateY(90deg) translateZ(260px);}
-  #face3 { -webkit-transform: rotateY(180deg)  translateZ(260px);}
-  
+#face1 { -webkit-transform: translateZ(260px);}
+#face2 { -webkit-transform: rotateY(90deg) translateZ(260px);}
 
 @-webkit-keyframes turnRight {
     from,to  {                                                    }
@@ -126,7 +123,7 @@
 .row_form_textarea > textarea {
 	position: absolute;
 	top: 20px;
-	left:23.5%;
+	left:22.5%;
 	width: 71%;
 	padding: 1% !important;
 	font-size: 17px !important;
