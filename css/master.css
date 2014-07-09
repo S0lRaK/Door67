@@ -7,6 +7,9 @@
 /* Contenedor General */
 #content {
 	min-height: 500px;
+}
+/* Division between content's rows */
+#content>div:first-child {
 	border-bottom: 2px solid #222;
 }
 #img_logo {
