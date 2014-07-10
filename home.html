@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Döor67 Recordings</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 'user-scalable' disables zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <meta name="description" content="">
         <meta name="author" content="">
+        <title>Döor67 Recordings</title>
         <!-- jQuery files -->
 		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
         <!-- Bootstrap files -->
@@ -32,62 +33,62 @@
         <!-- <link rel="shortcut icon" href="img/favicon.png"> -->
     </head>
     <body>
-        <div id="page" class="container">
-	        <div class="row clearfix">
-		        <div id="logo" class="col-md-3 column">
+	    <header class="container-fluid">
+		    <div class="row" id="header">
+                <div id="logo" class="col-md-3">
 			        <img alt="Logo Döor67" id="img_logo" src="img/logos/logo.png">   
 		        </div>
-		        <div id="banner" class="col-md-9 column" >
-			        <div class="carousel slide s" id="carousel">
+		        <div id="banner" class="col-md-9" >
+			        <div class="carousel slide" id="carousel">
+                        <!-- Wrapper for slides -->
 				        <div class="carousel-inner">
 					        <div class="item">
 						        <img alt="Banner 1" src="img/banners/banner1.png" >
-						        <div class="carousel-caption"></div>
 					        </div>
 					        <div class="item active">
 						        <img alt="Banner 2" src="img/banners/banner2.jpg" >
-						        <div class="carousel-caption"></div>
 					        </div>
 					    </div> 
 			        </div>
 		        </div>
-	        </div>
-	        <div class="row clearfix" id="menu">
-		        <div class="col-md-12 column">
-			        <nav class="navbar navbar-default navbar-inverse" role="navigation">
-				    <!--<div class="navbar-header">
-			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">HOME</a>
-				    </div>-->
-					    <div class="collapse navbar-collapse" id="navbar-collapse">
-						    <ul class="nav navbar-nav">
-	                            <li class="active">
-								    <a href="home.html">HOME</a>
-							    </li>
-	                            <li>
-								    <a href="artists.html">ARTISTS</a>
-							    </li>
-							    <li>
-								    <a href="releases.html">RELEASES</a>
-							    </li>
-	                            <li>
-	                                <a href="showcases.html">SHOWCASES</a>
-	                            </li>
-							    <li>
-	                                <a href="podcasts.html">PODCASTS</a>
-	                            </li>
-	                            <li>
-	                                <a href="shop.html">SHOP</a>
-	                            </li>
-						    </ul>
-						    <ul class="nav navbar-nav navbar-right">
-							    <li>
-								    <a href="about.html">ABOUT US</a>
-							    </li>
-							</ul>
-					    </div>
-			        </nav>
-		        </div>
-	        </div>
+            </div>
+            <div class="row" id="menu">
+                <div class="col-md-12">
+                        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                        <!--<div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">HOME</a>
+                        </div>-->
+                            <div class="collapse navbar-collapse" id="navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active">
+                                        <a href="home.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="artists.html">ARTISTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="releases.html">RELEASES</a>
+                                    </li>
+                                    <li>
+                                        <a href="showcases.html">SHOWCASES</a>
+                                    </li>
+                                    <li>
+                                        <a href="podcasts.html">PODCASTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html">SHOP</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="about.html">ABOUT US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+            </div>
+        </header>
 	        <div class="row clearfix" id="content">
 			    <div class="col-md-12 column">
 			       	<div class="row">
@@ -227,6 +228,5 @@
 			        </div>
 		        </div>
 	        </div>
-        </div>
     </body>
 </html>
