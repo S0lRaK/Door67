@@ -2,7 +2,6 @@
     font-family: Verdana;
     color: #999;
     background-color: #F8F8F8;
-    padding-top: 1%;
 }
 /* Contenedor General */
 #content {
@@ -11,10 +10,6 @@
 /* Division between content's rows */
 #content>div:first-child {
 	border-bottom: 2px solid #222;
-}
-#img_logo {
-	width: 117%;
-	height: 120px;
 }
 /* Banner */
 .carousel-inner>.item>img {
