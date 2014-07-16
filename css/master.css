@@ -90,9 +90,7 @@ button {
 	clear: both;
 	float: left;
 }
-/* Modal contact 
 textarea {
      resize: none;
-     width: 400px; 
-     height: 150px;
-}*/
+     font-size: 5px;
+}
