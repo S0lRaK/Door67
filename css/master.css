@@ -13,16 +13,15 @@
 }
 /* Banner */
 .carousel-inner>.item>img {
-	width: 100%;
 	margin-bottom: 1%;
-}
-/* Contenedor NAVBAR */
-#menu>div>nav {
-	background-color: #222;
 }
 #videoBackground {
 	height: 100%;
 	width: 100%;
+}
+textarea {
+    resize: none;
+    font-size: 5px;
 }
 /*-------------------- INPUTS --------------------*/
 input[type='text'] {
@@ -50,47 +49,11 @@ button {
 }
 /*-------------------- RELEASES --------------------*/
 /* Home */
-#releases {
-	height: 420px;
-	clear: both;
-	float: left;
-	padding-left: 20px;
-}
-#releases img {
-	height: 200px;
-	width: 200px;
-}
-.frontRelease {
-	clear: both;
-	float: left;
-}
-.infoRelease {
-	float: left;
-}
 .titleRelease {
-	clear: both;
-	float: left;
 	font-weight: bold;
 	font-size: 12px;
 	margin-bottom: 2px;
 }
 .artistRelease {
-	clear: both;
-	float: left;
 	font-size: 10px;
-	margin-bottom: 2px;
-}
-#lastRelease {
-	position: relative;
-	clear: both;
-	float: left;
-	margin-bottom: 5px;
-}
-#lastRelease2 {
-	clear: both;
-	float: left;
-}
-textarea {
-     resize: none;
-     font-size: 5px;
 }
