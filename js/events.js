@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	// exececute function to add a click envent on modal buttons
 	btn_3D_Cick();
+	
 	//declare function wich add event to modal button
 	function btn_3D_Cick(){
 		$(".btn_3d").click(function(){
@@ -17,9 +18,12 @@ $(document).ready(function(){
 			}
 			else if($(this).attr("id") == "btn_contact_showcase"){
 				$("#face2").html(forms.showcaseForm());
+				$( "#datepicker" ).datepicker();
 				setTimeout(function(){
 					$("#spinner").removeClass("turnRight");
 					$("#face1").html(forms.showcaseForm());
+					$("#face2").empty();
+		    		$( "#datepicker" ).datepicker();
 					btn_3D_Cick();
 				}, 1000);
 			}

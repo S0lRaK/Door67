@@ -65,7 +65,7 @@
 	margin-top: 1%;
 }
 /*----- 3D transition -----*/
-#spinner div {
+#spinner>div {
     position: absolute;
     width: 518px;
     height: 420px;
@@ -113,7 +113,6 @@
 .row_form_textarea {
 	height: 170px !important;
 	position: relative !important;
-	line-height: 85px !important;
 	text-align: left !important;
 	padding: 1% 4%;
 }
@@ -133,8 +132,21 @@
 	font-size: 17px !important;
 }
 
-#btnSubmit{
+#btnSubmitGeneral{
 	position:relative;
-	top: 80%;
+	top: 67%;
 	left:77%;
 }
+#btnSubmitShowcase{
+	position:relative;
+	top: 1%;
+	left:77%;
+}
+#datepicker{
+	position: relative;
+	width: 70%;
+}
+#datepicker>div{
+	line-height: 60%!important;
+}
+
