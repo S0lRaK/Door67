@@ -10,3 +10,4 @@ var forms = {
 	}
 };
 
+//<div class="calendar" data-color="normal"><div data-role="day" data-day="2013910"><div data-role="event" data-name="This is an event" data-start="9.00" data-end="9.30" data-location="The Web"></div></div></div>
