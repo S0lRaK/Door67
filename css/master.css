@@ -53,6 +53,7 @@ button {
 /* Home */
 .infoRelease {
     vertical-align: middle;
+    padding: 20% 0%;
 }
 .titleRelease {
 	font-weight: bold;

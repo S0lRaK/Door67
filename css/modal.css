@@ -138,15 +138,17 @@
 	left:77%;
 }
 #btnSubmitShowcase{
-	position:relative;
-	top: 1%;
+	position:absolute;
+	top: 74%;
 	left:77%;
 }
 #datepicker{
 	position: relative;
-	width: 70%;
+	width: 100%;
 }
 #datepicker>div{
-	line-height: 60%!important;
+	line-height: 40%!important;
+	position: relative;
+	margin-top: 10%;
 }
 
