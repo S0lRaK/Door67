@@ -111,28 +111,39 @@
 }
 /* Last row of form genera contact*/
 .row_form_textarea {
-	height: 170px !important;
-	position: relative !important;
 	text-align: left !important;
-	padding: 1% 4%;
+	padding: 2% 4%;
+}
+#textareaFormGeneral{
+	position: absolute;
+	top: 43%;
+	left: 23.5%;
+	height: 30%;
+	width: 70.7%;
+	font-size: 15px;
+	padding: 0px;
 }
 .rowFormCalendar{
 	height: 44%;
 	padding: 1% 4%;
 }
-.row_form_textarea > textarea {
-	position: absolute;
-	top: 0px;
-	left:23.5%;
-	width: 70%;
-	height: 105px !important;
-	padding: 1% !important;
-	font-size: 17px !important;
+/*Date calendar pick*/
+.ui-state-default:hover{
+	background: #101010 50% 50% repeat-x;
+	color: white;
+}
+.ui-state-active{
+	background: #101010 50% 50% repeat-x !important;
+	color: white !important;
+}
+#textareaFormShowcase{
+	width: 100%;
+	font-size: 15px;
 }
 #btnSubmitGeneral{
-	position:relative;
-	top: 67%;
-	left:77%;
+	position:absolute;
+	top: 83%;
+	left:80.5%;
 }
 .colFormCalendar{
 	width: 49%;

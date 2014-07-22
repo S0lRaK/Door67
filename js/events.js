@@ -19,12 +19,15 @@ $(document).ready(function(){
 			else if($(this).attr("id") == "btn_contact_showcase"){
 				$("#face2").html(forms.showcaseForm());
 				$( "#datepicker" ).datepicker();
+				$(".ui-state-active").removeClass("ui-state-active");
 				setTimeout(function(){
 					$("#spinner").removeClass("turnRight");
 					$("#face1").html(forms.showcaseForm());
 					$("#face2").empty();
 		    		$( "#datepicker" ).datepicker();
 					btn_3D_Cick();
+					$(".ui-state-active").removeClass("ui-state-active");
+					DateCalendar_Click();
 				}, 1000);
 			}
 			else if($(this).attr("id") == "btn_contact_demo"){
@@ -36,6 +39,17 @@ $(document).ready(function(){
 				}, 1000);
 			}
 			
+		});
+	}
+	function DateCalendar_Click(){
+		$(".ui-state-default").parent().click(function(){
+			year= $(this).attr("data-year");
+			month = $(this).attr("data-month");
+			day = $(this).find(".ui-state-default").text();
+			$("#inptDateShowcase").val("");
+			$("#inptDateShowcase").val(day + "/" + month + "/" + year);
+			$(".ui-state-default").unbind();
+			DateCalendar_Click();
 		});
 	}
 	/*$("#btn_contact_general").unbind();
