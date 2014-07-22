@@ -42,44 +42,44 @@
 /*------------------------------ CONTACT ------------------------------------*/
 /*----- common -----*/
 #modal_dialog_contact {
-	height: 500px;
-	width: 800px !important;
+	height: 85% !important;
+	width: 70% !important;
+	margin: 0.5% 18%;
 }
 /* label modal contact */
 #modal-contact {
 	padding: 0px;
 }
 #modal_content_contact {
-	
+	height: 100%;
 }
 #modal_body_contact {
-	padding: 3% 17.5%;
-	height: 500px;
+	padding: 3% 13.5%;
+	height: 100%;
 }
 #modal_body_contact > .row > .col-md-12 {
 	text-align: center;
 }
 #stage {
 	width: 100%;
-	height: 400px;
+	height: 50%;
 	margin-top: 1%;
 }
 /*----- 3D transition -----*/
 #spinner>div {
     position: absolute;
-    width: 518px;
-    height: 420px;
+    width: 710px;
+    height: 500px;
     background-color: #101010;
     text-align: center;
     line-height: 120px;
     font-size: 17px;
   }
 
-#face1 { -webkit-transform: translateZ(260px);}
-#face2 { -webkit-transform: rotateY(90deg) translateZ(260px);}
+#face1 { -webkit-transform: translateZ(356px);}
+#face2 { -webkit-transform: rotateY(90deg) translateZ(356px);}
 #imgMoon{
-	margin-top: 1%;
-	margin-left: 9%;
+	margin: 5% 20%;
 }
 @-webkit-keyframes turnRight {
     from,to  {                                                    }
@@ -93,7 +93,7 @@
     -webkit-animation-duration: 1s;
     -webkit-animation-direction: alternate;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform-origin: 260px 260px 0;
+    -webkit-transform-origin: 356px 356px 0;
 }
 /* row of form general contact*/
 .row_form_general {
@@ -116,39 +116,38 @@
 	text-align: left !important;
 	padding: 1% 4%;
 }
-.row_form_textarea > label {
-	position: absolute;
-	top: 0px;
-	height: 20px;
-	width: 20%;
+.rowFormCalendar{
+	height: 44%;
+	padding: 1% 4%;
 }
 .row_form_textarea > textarea {
 	position: absolute;
-	top: 30px;
+	top: 0px;
 	left:23.5%;
 	width: 70%;
 	height: 105px !important;
 	padding: 1% !important;
 	font-size: 17px !important;
 }
-
 #btnSubmitGeneral{
 	position:relative;
 	top: 67%;
 	left:77%;
 }
+.colFormCalendar{
+	width: 49%;
+	float: left;
+}
 #btnSubmitShowcase{
 	position:absolute;
-	top: 74%;
-	left:77%;
-}
+	left:79%;
+}/*
 #datepicker{
 	position: relative;
 	width: 100%;
-}
+	top: -35%;
+}*/
 #datepicker>div{
-	line-height: 40%!important;
-	position: relative;
-	margin-top: 10%;
+	line-height: 70%!important;
 }
 
