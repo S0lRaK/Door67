@@ -98,7 +98,6 @@
 /* row of form general contact*/
 .row_form_general {
 	position: relative !important;
-	height: 45px !important;
 	line-height: 22.5px !important;
 	text-align: left !important;
 	padding: 1% 4%;
@@ -112,16 +111,18 @@
 /* Last row of form genera contact*/
 .row_form_textarea {
 	text-align: left !important;
-	padding: 2% 4%;
+	padding: 1.5% 4%;
+	height: 50%;
+}
+.row_form_textarea>label{
+	width: 20%;
 }
 #textareaFormGeneral{
-	position: absolute;
-	top: 43%;
-	left: 23.5%;
-	height: 30%;
-	width: 70.7%;
-	font-size: 15px;
-	padding: 0px;
+	height: 75%;
+	width: 77.3%;
+	font-size: 17px;
+	padding: 2%;
+	line-height: 100%;
 }
 .rowFormCalendar{
 	height: 44%;
@@ -138,7 +139,8 @@
 }
 #textareaFormShowcase{
 	width: 100%;
-	font-size: 15px;
+	font-size: 17px;
+	height: 100px;
 }
 #btnSubmitGeneral{
 	position:absolute;
@@ -148,16 +150,12 @@
 .colFormCalendar{
 	width: 49%;
 	float: left;
+	height: 100%;
 }
 #btnSubmitShowcase{
 	position:absolute;
 	left:79%;
-}/*
-#datepicker{
-	position: relative;
-	width: 100%;
-	top: -35%;
-}*/
+}
 #datepicker>div{
 	line-height: 70%!important;
 }
