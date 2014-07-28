@@ -111,18 +111,21 @@
 /* Last row of form genera contact*/
 .row_form_textarea {
 	text-align: left !important;
-	padding: 1.5% 4%;
+	padding: 2% 4%;
 	height: 50%;
 }
 .row_form_textarea>label{
 	width: 20%;
+	position: relative;
+	top: -52%;
 }
 #textareaFormGeneral{
-	height: 75%;
+	height: 66%;
 	width: 77.3%;
 	font-size: 17px;
 	padding: 2%;
 	line-height: 100%;
+	position:relative;
 }
 .rowFormCalendar{
 	height: 44%;
@@ -144,7 +147,7 @@
 }
 #btnSubmitGeneral{
 	position:absolute;
-	top: 83%;
+	top: 80%;
 	left:80.5%;
 }
 .colFormCalendar{
