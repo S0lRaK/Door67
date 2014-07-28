@@ -105,6 +105,9 @@
 .row_form_general>input[type='text'] {
 	width: 77%;
 }
+#inptDateShowcase{
+	width: 50%;
+}
 .row_form_general>label {
 	width: 20%;
 }
