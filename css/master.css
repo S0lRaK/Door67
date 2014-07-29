@@ -8,11 +8,9 @@
 	min-height: 500px;
 }
 /* Division between content's rows */
-/*
 #content>:first-child {
 	border-bottom: 2px solid #999;
 }
-*/
 /* Banner */
 .carousel-inner>.item>img {
 	margin-bottom: 1%;
@@ -49,11 +47,17 @@ button {
 	color: #999;
 	outline: 0px;
 }
-/*-------------------- RELEASES --------------------*/
+/*-------------------- RELEASES section --------------------*/
 /* Home */
+#releases {
+    /*max-height: 400px;*/
+    border-right: 2px solid #999999;
+}
+.frontRelease img {
+    max-height: 200px;
+}
 .infoRelease {
-    vertical-align: middle;
-    padding: 20% 0%;
+    padding: 20% 5%;
 }
 .titleRelease {
 	font-weight: bold;
