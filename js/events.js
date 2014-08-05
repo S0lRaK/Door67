@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var timeoutMessage;
 	ContactModal_Click();
 	// exececute function to add a click envent on modal buttons
 	function ContactModal_Click(){
@@ -75,6 +76,8 @@ $(document).ready(function(){
 	
 	function ButtonSubmit_Click(){
 		$(".btnSubmit").click(function(){
+			clearTimeout(timeoutMessage);
+			$(".msg").remove();
 			ValidateAllForm("face1", "row_form_general", "inptEmail", "textareaForm", $("#face1").children("h1").text());	
 		});
 	}
@@ -113,22 +116,27 @@ $(document).ready(function(){
 	}
 	/* function that evalue all fileds are fill in, a correct email and textarea fill in*/
 	function ValidateAllForm(idTotal, section, idEmail, textarea, titleFormH1){
+		timeoutMessage = setTimeout(function(){
+			$(".msg").fadeOut(2000, function(){
+				$(this).remove();
+			});
+		},4000);
 		arrayRows = new Array();
 		arrayRows = $("#" + idTotal).find("." + section);
 		for(i=0 ; i < arrayRows.length ; i++){
 			if($(arrayRows[i]).children("input").length == 1){
 				if(ValidateFullFiled($(arrayRows[i]).children("input").attr("id")) == false){
-					console.log("You should fill in all fields, please.");
+					$(".in").append("<div class='msg msgFail'><p>You should fill in all fields, please.</p></div>");
 					return;
 				}				
 			}
 		}
 		if(ValidateEmail(idEmail) == false){
-			console.log("You should put a correct email, please.");
+			$(".in").append("<div class='msg msgFail'><p>You should put a correct email, please.</p></div>");
 			return;
 		}
 		if(ValidateFullFiled($("." + textarea).attr("id")) == false){
-			console.log("You should fill in a brief mesaje, please.");
+			$(".in").append("<div class='msg msgFail'><p>You should fill in a brief mesaje, please.</p></div>");
 			return;
 		}
 		if(titleFormH1 == "General"){
@@ -152,7 +160,7 @@ $(document).ready(function(){
 		else{
 			
 		}
-		console.log("Your email has been sent.");
+		$(".in").append("<div class='msg msgOk'><p>Your email has been sent.</p></div>");
 	}
 // MAIN VIDEO
 /*

@@ -165,4 +165,21 @@
 #datepicker>div{
 	line-height: 70%!important;
 }
-
+.msgFail{
+	box-shadow: 0px 0px 0px 2pt #F73232;
+	background-color: #F73232;
+}
+.msgOk{
+	box-shadow: 0px 0px 0px 2pt green;
+	background-color: green;
+}
+.msg{
+	padding: 1%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	border: 2px solid white;
+	border-radius: 5pt;
+	max-width: 16%;
+}
