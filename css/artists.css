@@ -1,0 +1,19 @@
+#divArtists{
+	width: 100%;
+	min-height: 499px;
+	background-color: #222;
+	
+	border-radius: 6px;
+	margin-bottom: 2%;
+	background: url('../img/textures/congruent_outline.png'); 
+}
+.imgArtist{
+	border-radius: 100%;
+}
+.imgArtist2{
+	border-radius: 100%;
+}
+.divArtist{
+	max-height: 272px;
+	padding: 4% 3%;
+}
