@@ -1,15 +1,15 @@
-#footer {
+footer {
   -moz-border-radius: 6px 6px 6px 6px;
   -webkit-border-radius: 6px 6px 6px 6px;
   font-size: 14px;
   background-color: #222;
 }
 /* left part of footer (contact & newsletter) */
-#footer>div:first-child {
+#contactNews {
 	padding-top: 14px;
 }
 /* right part of footer (social) */
-#footer>div:nth-child(2) {
+#social {
 	padding-top: 7px;
 	padding-bottom: 7px;
 }

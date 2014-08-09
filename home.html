@@ -9,16 +9,20 @@
         <title>Döor67 Recordings</title>
         <!-- jQuery files -->
 		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
         <!-- Bootstrap files -->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>		
-		<!-- CSS filles -->
+		<!-- CSS files -->
 		<link rel="stylesheet" type="text/css" href="css/master.css">
 		<link rel="stylesheet" type="text/css" href="css/modal.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
-		<!-- JavaScript files -->
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/artists.css">
+        <!-- JavaScript files -->
+        <script type="text/javascript" src="js/autoEvents.js"></script>
         <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/jsonForms.js"></script>
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -146,117 +150,104 @@
 			    <div class="col-md-6" id="facebook"></div>
 			</div>
 	    </section>
-	    <footer class="container-fluid">
-		    <div class="col-xs-6">
-			    <div class="row clearfix" >
-				        <div class="col-md-3 column">
-				        	<label id="modal-contact" href="#modal-container-contact" role="button" class="btn" data-toggle="modal">CONTACT</label>
-			                <div class="modal fade" id="modal-container-contact" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				                <div class="modal-dialog" id="modal_dialog_contact">
-					                <div class="modal-content" id="modal_content_contact">
-						                <div class="modal-header">
-							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							                <h4 class="modal-title" id="myModalLabel">CONTACT</h4>
-						                </div>
-						                <div class="modal-body" id="modal_body_contact">
-						                	<div class="row clearfix">
-                                                <div class="col-md-12">
-                                                	<button id="btn_contact_general" class="btn btn-inverse btn-lg" >General</button>
-                                                	<button id="btn_contact_showcase" class="btn btn-inverse btn-lg btn_3d" >Book showcase</button>
-                                                	<button id="btn_contact_demo" class="btn btn-inverse btn-lg btn_3d" >Send demo</button>
+        <footer class="container-fluid">
+            <div class="row">
+                <section class="col-xs-6" id="contactNews">
+                    <div class="row">
+                        <div class="col-xs-9">
+                            <div class="row">
+                                <section class="col-xs-6" id="contact">
+                                    <label id="modal-contact" href="#modal-container-contact" role="button" class="btn" data-toggle="modal">CONTACT</label>
+                                    <div class="modal fade" id="modal-container-contact" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" id="modal_dialog_contact">
+                                            <div class="modal-content" id="modal_content_contact">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <h4 class="modal-title" id="myModalLabel">CONTACT</h4>
                                                 </div>
-                                            </div>
-                                            <div class="row clearfix">
-                                                <div class="col-md-12">
-                                                	<div id="stage">
-													    <div id="spinner">
-													        <div id="face2"></div>
-													        <div id="face1">
-											        			<h1>General</h1>
-											        			<div class="row_form_general">
-											        				<label>
-											        					Name
-										        					</label>
-										        					<input type="text"/>
-										        				</div>
-											        			<div class="row_form_general">
-											        				<label>
-											        					Email
-										        					</label>
-										        					<input type="text"/>
-									        					</div>
-											        			<div class="row_form_general">
-											        				<label>
-											        					Subject
-										        					</label>
-										        					<input type="text"/>
-									        					</div>
-											        			<div class="row_form_textarea">
-											        				<label >
-											        					Messaje
-										        					</label>
-										        					<textarea rows="10" cols="50"></textarea>
-									        					</div>
-												        	</div>
-													    </div>
-													</div>
+                                                <div class="modal-body" id="modal_body_contact">
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-12">
+                                                            <button id="btn_contact_general" class="btn btn-inverse btn-lg" >General</button>
+                                                            <button id="btn_contact_showcase" class="btn btn-inverse btn-lg btn_3d" >Book showcase</button>
+                                                            <button id="btn_contact_demo" class="btn btn-inverse btn-lg btn_3d" >Send demo</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-12">
+                                                            <div id="stage">
+                                                                <div id="spinner">
+                                                                    <div id="face2"></div>
+                                                                    <div id="face1">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <div class="modal-footer"></div>
                                             </div>
-						                </div>
-						                <div class="modal-footer"></div>
-					                </div>
-				                </div>
-				            </div>
-			        	</div>
-				        <div class="col-md-3 column">
-                            <label id="modal-newsletter" href="#modal-container-newsletter" role="button" class="btn" data-toggle="modal">NEWSLETTER</label>
-			                <div class="modal fade" id="modal-container-newsletter" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				                <div class="modal-dialog">
-					                <div class="modal-content">
-						                <div class="modal-header">
-							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-							                <h4 class="modal-title" id="myModalLabel">Newsletter</h4>
-						                </div>
-						                <div class="modal-body" id="modal_body_newsletter">
-                                            <div class="row clearfix">
-                                                <div class="col-md-12">
-                                                	<p>Subscribe to our newsletter to receive monthly updates about Döor67.</p>
-					                                <p>E-mail: <input type="text" id="input_email" class="txt_email" placeholder="example@mail.com" /> </p>
-					                                <a id="a_newsletter" href="suscripcion.php?file=">
-                                                        <button class="btn btn-inverse btn-lg">Yes, please!</button>
-                                                    </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="col-xs-6" id="newsletter">
+                                    <label id="modal-newsletter" href="#modal-container-newsletter" role="button" class="btn" data-toggle="modal">NEWSLETTER</label>
+                                    <div class="modal fade" id="modal-container-newsletter" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <h4 class="modal-title" id="myModalLabel">Newsletter</h4>
                                                 </div>
+                                                <div class="modal-body" id="modal_body_newsletter">
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-12">
+                                                            <p>Subscribe to our newsletter to receive monthly updates about Döor67.</p>
+                                                            <p>E-mail: <input type="text" id="input_email" class="txt_email" placeholder="example@mail.com" /> </p>
+                                                            <a id="a_newsletter" href="suscripcion.php?file=">
+                                                                <button class="btn btn-inverse btn-lg">Yes, please!</button>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer"></div>
                                             </div>
-						                </div>
-						                <div class="modal-footer"></div>
-					                </div>
-				                </div>
-				            </div>
-					    </div>
-                        <div class="col-md-6 column"></div>
-			        </div>
-		        </div>
-		        <div class="col-md-6 column" >
-			        <div class="row clearfix">
-                        <div class="col-md-2 column"></div>
-                        <div class="col-md-2 column">
-					        <a href="http://www.beatport.com/label/door67-recordings/26168" target="_blank"><img alt="Beatport" src="img/icons/beatport_icon.jpg" class="img-circle"></a>
-				        </div>
-                        <div class="col-md-2 column">
-					        <a href="http://www.mixcloud.com/door/" target="_blank"><img alt="Mixcloud" src="img/icons/mixcloud_icon_blue.png" class="img-circle"></a>
-				        </div>
-				        <div class="col-md-2 column">
-				        	<a href="http://soundcloud.com/door67" target="_blank"><img alt="Soundcloud" src="img/icons/soundcloud_icon.png" class="img-circle"></a>
-				        </div>
-				        <div class="col-md-2 column">
-					         <a href="https://twitter.com/#!/door671" target="_blank"><img alt="Twitter" src="img/icons/twitter_icon.png" class="img-circle"></a>
-				        </div>
-				        <div class="col-md-2 column">
-				        	<a href="http://www.facebook.com/Door67" target="_blank"><img alt="Facebook" src="img/icons/facebook_icon.png" class="img-circle"></a>
-				        </div>
-                        <div class="col-md-2 column"></div>
-			        </div>
-		        </div>
-	        </footer>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                </section>
+                <section class="col-xs-6" id="social">
+                    <div class="row">
+                        <div class="col-xs-6"></div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-2">
+                                    <a href="http://www.beatport.com/label/door67-recordings/26168" target="_blank"><img alt="Beatport" src="img/icons/beatport_icon.jpg" class="img-circle"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a href="http://www.mixcloud.com/door/" target="_blank"><img alt="Mixcloud" src="img/icons/mixcloud_icon_blue.png" class="img-circle"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a href="http://soundcloud.com/door67" target="_blank"><img alt="Soundcloud" src="img/icons/soundcloud_icon.png" class="img-circle"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a href="https://twitter.com/#!/door671" target="_blank"><img alt="Twitter" src="img/icons/twitter_icon.png" class="img-circle"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a href="http://www.facebook.com/Door67" target="_blank"><img alt="Facebook" src="img/icons/facebook_icon.png" class="img-circle"></a>
+                                </div>
+                                <div class="col-xs-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
     </body>
 </html>
