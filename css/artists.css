@@ -1,19 +1,47 @@
 #divArtists{
 	width: 100%;
-	min-height: 499px;
+	min-height: 550px;
 	background-color: #222;
-	
 	border-radius: 6px;
-	margin-bottom: 2%;
 	background: url('../img/textures/congruent_outline.png'); 
 }
 .imgArtist{
 	border-radius: 100%;
-}
-.imgArtist2{
-	border-radius: 100%;
+	border: 2px solid transparent;
+	-webkit-filter: grayscale(100%);
+	/* transition-timing-function property */
+	-webkit-transition: all 1s ease-out;	/* ease-out	Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1)) */
+       -moz-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+            transition: all 1s ease-out;
 }
 .divArtist{
 	max-height: 272px;
 	padding: 4% 3%;
+	text-align: center;
+}
+.imgArtist:hover{
+	cursor: pointer;
+	border-color: #F8F8F8;
+}
+#infoArtist{
+	width: 100%;
+	min-height: 550px;
+	background-color: #222;
+	border-radius: 6px;
+	background: url('../img/textures/congruent_outline.png'); 
+	display: none;
+}
+.closeImage{
+	border-radius: 6px;
+	width: 40px;
+	position: absolute;
+	top: 1%;
+	right: 2%;
+	
+}
+.closeImage:hover{
+	cursor: pointer;
+	
 }
