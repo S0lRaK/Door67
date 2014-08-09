@@ -34,7 +34,7 @@
     </head>
     <body>
 	    <header class="container-fluid">
-		    <div class="row" id="header">
+		    <section class="row" id="header">
                 <div id="logo" class="col-xs-3">
 			        <img alt="Logo Döor67" class="img-responsive" src="img/logos/logo.png">
 		        </div>
@@ -51,8 +51,8 @@
 					    </div> 
 			        </div>
 		        </div>
-            </div>
-            <div class="row" id="menu">
+            </section>
+            <section class="row" id="menu">
                 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+            </section>
         </header>
 	    <section class="container-fluid" id="content">
             <div class="row">
@@ -127,17 +127,28 @@
                     </div>
                 </div>
 			    <div class="col-md-6" id="showcases">
-                    <h3>Next party <a href="showcases.html.html"></a> </h3>
+                    <h3>Next party</h3>
+                    <div id="nextParty">
+                        <img alt="2014-06-13 Suara Bonobo" class="img-responsive" src="http://www.mrparty.es/ficheros/carteles/1388_1zx1glz5x5s_recorte.jpeg">
+                    </div>
 			    </div>
             </div>
 			<div class="row">
-			    <div class="col-md-6" id="podcasts"></div>
+			    <div class="col-md-6" id="podcasts">
+                    <h3>Last podcast</h3>
+                    <iframe width="100%" height="180" src="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Fdoor%2Fjavi-sampol-doorcast-40-the-other-side-door67%2F&amp;embed_uuid=14ec749a-1f43-497c-986b-9c18a6411895&amp;replace=0&amp;hide_cover=1&amp;light=1&amp;stylecolor=999999&amp;embed_type=widget_standard&amp;hide_tracklist=1" frameborder="0"></iframe>
+                    <div style="clear: both; height: 3px; width: auto;"></div>
+                    <p style="display: block; font-size: 11px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; margin: 0px; padding: 3px 4px; color: rgb(153, 153, 153); width: auto;">
+                        <a href="http://www.mixcloud.com/door/javi-sampol-doorcast-40-the-other-side-door67/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=resource_link" target="_blank" style="color: rgb(153, 153, 153); font-weight: bold;">Javi Sampol - DOORCAST 4.1   ( The Other Side , Door67 )</a><span> by </span><a href="http://www.mixcloud.com/door/?utm_source=widget&amp;amp;utm_medium=web&amp;amp;utm_campaign=base_links&amp;amp;utm_term=profile_link" target="_blank" style="color: rgb(153, 153, 153); font-weight: bold;">Door67 Recordings </a><span> on </span><a href="http://www.mixcloud.com/?utm_source=widget&amp;utm_medium=web&amp;utm_campaign=base_links&amp;utm_term=homepage_link" target="_blank" style="color: rgb(153, 153, 153); font-weight: bold;"> Mixcloud</a>
+                    </p>
+                    <div style="clear: both; height: 3px; width: auto;"></div>
+			    </div>
 			    <div class="col-md-6" id="facebook"></div>
 			</div>
 	    </section>
-	        <div class="row clearfix" id="footer">
-		        <div class="col-md-6 column">
-			        <div class="row clearfix" >
+	    <footer class="container-fluid">
+		    <div class="col-xs-6">
+			    <div class="row clearfix" >
 				        <div class="col-md-3 column">
 				        	<label id="modal-contact" href="#modal-container-contact" role="button" class="btn" data-toggle="modal">CONTACT</label>
 			                <div class="modal fade" id="modal-container-contact" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -246,6 +257,6 @@
                         <div class="col-md-2 column"></div>
 			        </div>
 		        </div>
-	        </div>
+	        </footer>
     </body>
 </html>

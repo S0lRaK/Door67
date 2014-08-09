@@ -15,13 +15,21 @@
 .carousel-inner>.item>img {
 	margin-bottom: 1%;
 }
+/*
 #videoBackground {
 	height: 100%;
 	width: 100%;
 }
+*/
 textarea {
     resize: none;
     font-size: 5px;
+}
+#nextParty img{
+    max-height: 400px;
+}
+#podcasts {
+    border-right: 2px solid #999999;
 }
 /*-------------------- INPUTS --------------------*/
 input[type='text'] {
@@ -57,7 +65,7 @@ button {
     max-height: 200px;
 }
 .infoRelease {
-    padding: 20% 5%;
+    padding: 14% 5%;
 }
 .titleRelease {
 	font-weight: bold;
