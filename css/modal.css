@@ -41,23 +41,23 @@
 }
 /*------------------------------ CONTACT ------------------------------------*/
 /*----- common -----*/
-#modal_dialog_contact {
+#modalDialogContact {
 	height: 85% !important;
 	width: 70% !important;
 	margin: 0.5% 18%;
 }
 /* label modal contact */
-#modal-contact {
+#lblModalContact {
 	padding: 0px;
 }
-#modal_content_contact {
+#modalContentContact {
 	height: 100%;
 }
-#modal_body_contact {
+#modalBodyContact {
 	padding: 3% 13.5%;
 	height: 100%;
 }
-#modal_body_contact > .row > .col-md-12 {
+#modalBodyContact > .row > .col-md-12 {
 	text-align: center;
 }
 #stage {
