@@ -4,13 +4,8 @@ $(document).ready(function(){
 	function selectArtistHover(){
 		$(".imgArtist").hover(function(){
 			$(this).attr("style", "-webkit-filter: grayscale(0%);");
-			$(this).parent().find("label").text($(this).parent().attr("artistName"));
 		}, function(){
-			$(this).parent().find("label").fadeOut("fast", function(){
-				$(this).attr("style", "display: block;");
-				$(this).empty();
 				$(this).parent().find("img").attr("style", "-webkit-filter: grayscale(100%);");
-			});
 		});
 	}
 	

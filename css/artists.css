@@ -1,9 +1,10 @@
-#divArtists{
-	width: 100%;
-	min-height: 580px;
-	border-radius: 6px;
-	background: url('../img/textures/green-fibers.png');
+body{
+	background: url('../img/textures/congruent_outline.png');
 }
+#header{
+	background-color: #F8F8F8;
+}
+
 .imgArtist{
 	border-radius: 100%;
 	border: 2px solid transparent;
@@ -16,8 +17,6 @@
             transition: all 1s ease-out;
 }
 .divArtist{
-	max-height: 272px;
-	padding: 4% 3%;
 	text-align: center;
 }
 .imgArtist:hover{
