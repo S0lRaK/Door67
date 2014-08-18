@@ -19,17 +19,16 @@ body{
 .divArtist{
 	text-align: center;
 }
+#divArtists{
+	height: 100%;
+}
 .imgArtist:hover{
 	cursor: pointer;
 	border-color: #F8F8F8;
 }
 #infoArtist{
-	width: 100%;
-	min-height: 580px;
-	background-color: #222;
-	border-radius: 6px;
-	background: url('../img/textures/congruent_outline.png'); 
 	display: none;
+	height: 100%;
 }
 .closeImage{
 	border-radius: 6px;
