@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	function selectArtistClick(){
 		$(".imgArtist").click(function(){
-			var artistName = $(this).parent().attr("artistName");
+			var artistName = $(this).parent().parent().attr("artistname");
 			$("#divArtists").fadeOut("slow", function(){
 				$(this).parent().append("<div id='infoArtist'></div>");
 				$("#infoArtist").append("<h1 style='margin: 0px'>" + artistName  + "</h1>");

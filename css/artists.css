@@ -15,6 +15,7 @@ body{
          -o-transition: all 1s ease-out;
         -ms-transition: all 1s ease-out;
             transition: all 1s ease-out;
+    
 }
 .divArtist{
 	text-align: center;
@@ -36,9 +37,12 @@ body{
 	position: absolute;
 	top: 1%;
 	right: 2%;
-	
 }
 .closeImage:hover{
 	cursor: pointer;
 	
+}
+.divArtist>div{
+	width: 80%;
+	text-align: center;
 }
