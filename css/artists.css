@@ -31,6 +31,7 @@ body{
 	display: none;
 	height: 100%;
 }
+/* close an artist description*/
 .closeImage{
 	border-radius: 6px;
 	width: 40px;
@@ -38,11 +39,15 @@ body{
 	top: 1%;
 	right: 2%;
 }
+
 .closeImage:hover{
 	cursor: pointer;
-	
 }
+/* container of each artist image, on general section*/
 .divArtist>div{
 	width: 80%;
 	text-align: center;
+}
+#infoArtist>div.row{
+	margin: 2% 0%;
 }
