@@ -1,4 +1,4 @@
-.carrousel_inner ul li a img{
+.carrousel_inner ul li img{
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     -webkit-filter: grayscale(100%);
@@ -9,8 +9,9 @@
         -ms-transition: all 1s ease-out;
             transition: all 1s ease-out;
 }
-.carrousel_inner ul li a img:hover{
+.carrousel_inner ul li img:hover{
     -webkit-filter: grayscale(0%);
+    cursor: pointer;
 }
 .carrousel_inner ul li{
     float:left;

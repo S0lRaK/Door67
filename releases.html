@@ -24,7 +24,7 @@
     <script type="text/javascript" src="js/autoEvents.js"></script>
     <script type="text/javascript" src="js/events.js"></script>
     <script type="text/javascript" src="js/jsonForms.js"></script>
-	<script type="text/javascript" src="js/adsRotator.js"></script>
+	<script type="text/javascript" src="js/releasesEvents.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -105,7 +105,7 @@
         </section>
     </header>
     <section class="container-fluid" id="content">
-    	<div class="row">
+    	<!--<div class="row">
     		<div class="col-md-1">
     			
     		</div>
@@ -113,33 +113,35 @@
     			<h1>Latest Release</h1>
     		</div>
     		<div class="col-md-7"></div>
-    	</div>
+    	</div>-->
     	<div class="row">
-    		<div class="col-md-1">
-    			
-    		</div>
-    		<div class="col-md-3">
-    			<img class="img-responsive" src="img/Releases/Door013 VV.AA. - Krusound, German Luque, ETCETCETC.jpg" alt="latest release" />
-    		</div>
-    		<div class="col-md-1">
-    			
-    		</div>
-    		<div class="col-md-6">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2>013 - ALWAYS TO FRONT</h2>
-    					<h3>Variuos Artist</h3>
-    				</div>
-    			</div>
-    			<div class="row">
-    				<div class="col-md-12">
-    					<p>Another Various artists Ep, is time to meet some new friends like Adrian Skunk, Saul Nieto and Carlo Valley. Presenting themselves as better know. Also is time for our team member German Luque to make his debut. And since long time ago, Krusound are back offering new heights for your ears. Enjoy as always. And cross the Door !</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="col-md-1">
-    			
-    		</div>
+    		<div id="releaseActive">
+	    		<div class="col-md-1">
+	    			
+	    		</div>
+	    		<div class="col-md-3" id="divImgActive">
+	    			<img description="Another Various artists Ep, is time to meet some new friends like Adrian Skunk, Saul Nieto and Carlo Valley. Presenting themselves as better know. Also is time for our team member German Luque to make his debut. And since long time ago, Krusound are back offering new heights for your ears. Enjoy as always. And cross the Door !" title="013 - ALWAYS TO FRONT" artist="Various Artist" class="img-responsive" src="img/Releases/Door013 VV.AA. - Krusound, German Luque, ETCETCETC.jpg" alt="latest release" />
+	    		</div>
+	    		<div class="col-md-1">
+	    			
+	    		</div>
+	    		<div class="col-md-6">
+	    			<div class="row">
+	    				<div class="col-md-12">
+	    					<h2 id="h2Title">013 - ALWAYS TO FRONT</h2>
+	    					<h3 id="h3Artist">Variuos Artist</h3>
+	    				</div>
+	    			</div>
+	    			<div class="row">
+	    				<div class="col-md-12">
+	    					<p id="pDescription">Another Various artists Ep, is time to meet some new friends like Adrian Skunk, Saul Nieto and Carlo Valley. Presenting themselves as better know. Also is time for our team member German Luque to make his debut. And since long time ago, Krusound are back offering new heights for your ears. Enjoy as always. And cross the Door !</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-1">
+	    			
+	    		</div>
+	    	</div>
     	</div>
     	<div class="row">
     		<div class="carrousel" data-pos="0">
@@ -147,28 +149,28 @@
                 <div id="adsCarrusel" class="carrousel_inner">
                     <ul>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img id="first1" class="img-responsive" src="img/Releases/Door001 VV.AA - Gustavho Bacilo, Krusound, Jandro Beat, Bonaventti&Juan-R, Flavio Folco. Lexlay, Mac Dephoner, Alberto Cicuendez.jpg" /></a>
+                            <img title="001 - THE OTHER SIDE" artist="Various Artist" description="The first Door67 Ep wants to show the other side. Authentic music made to be listened and enjoyed." class="img-responsive caruselImg" src="img/Releases/Door001 VV.AA - Gustavho Bacilo, Krusound, Jandro Beat, Bonaventti&Juan-R, Flavio Folco. Lexlay, Mac Dephoner, Alberto Cicuendez.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door002 VV.AA. - David Devilla, Jonathan Calvo, Eder ALvarez, Jandro Beat, Gustavho Bacilo, Krusound.jpg" /></a>
+                            <img title="002 -  WITHING FOUR WALLS" artist="Various Artist" description="We are proud to publish our second reference and to present new artists. We show fresh sounds ready to sweep any beach this summer." class="img-responsive caruselImg" src="img/Releases/Door002 VV.AA. - David Devilla, Jonathan Calvo, Eder ALvarez, Jandro Beat, Gustavho Bacilo, Krusound.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door003 VV.AA. - Razzo, Julian Collazos, Ludowick, David Hat.jpg" /></a>
+                            <img title="003 – BEHIND FREEDOM" artist="Various Artist" description="The third reference of our label, we want to show new artists involved in the project. In this time we have for techno sounds ready to shake your body. Enjoy it !" class="img-responsive caruselImg" src="img/Releases/Door003 VV.AA. - Razzo, Julian Collazos, Ludowick, David Hat.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door004 VV.AA. - Jandro Beat, Dok Jebeni, Herman Ramos, Mhanuel Armada.png" /></a>
+                            <img title="004 – FOUR VISIONS" artist="Various Artist" description="More artists and more sounds to expand our big family. Four more visions for our musical project. Hope you to enjoy again" class="img-responsive caruselImg" src="img/Releases/Door004 VV.AA. - Jandro Beat, Dok Jebeni, Herman Ramos, Mhanuel Armada.png" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door005 Krusound.jpg" /></a>
+                            <img title="005 – KRUSOUND EP" artist="Krusound" description="The first EP completly of Krusound, members of Door67. This young guys from Barcelona want to impregnate electronic music with his own style and vision. Music for clubs  and demanding dancefloors Hope everybody enjoy it !" class="img-responsive caruselImg" src="img/Releases/Door005 Krusound.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door001 VV.AA - Gustavho Bacilo, Krusound, Jandro Beat, Bonaventti&Juan-R, Flavio Folco. Lexlay, Mac Dephoner, Alberto Cicuendez.jpg" /></a>
+                            <img class="img-responsive caruselImg" src="img/Releases/Door001 VV.AA - Gustavho Bacilo, Krusound, Jandro Beat, Bonaventti&Juan-R, Flavio Folco. Lexlay, Mac Dephoner, Alberto Cicuendez.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door002 VV.AA. - David Devilla, Jonathan Calvo, Eder ALvarez, Jandro Beat, Gustavho Bacilo, Krusound.jpg" /></a>
+                            <img class="img-responsive caruselImg" src="img/Releases/Door002 VV.AA. - David Devilla, Jonathan Calvo, Eder ALvarez, Jandro Beat, Gustavho Bacilo, Krusound.jpg" />
                         </li>
                         <li>
-                            <a href="http://www.ajaxshake.com"><img class="img-responsive" src="img/Releases/Door003 VV.AA. - Razzo, Julian Collazos, Ludowick, David Hat.jpg" /></a>
+                            <img class="img-responsive caruselImg" src="img/Releases/Door003 VV.AA. - Razzo, Julian Collazos, Ludowick, David Hat.jpg" />
                         </li>
                     </ul>
                 </div>
