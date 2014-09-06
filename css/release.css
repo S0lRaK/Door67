@@ -1,0 +1,69 @@
+.carrousel_inner ul li a img{
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.carrousel_inner ul li a img:hover{
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+.carrousel_inner ul li{
+    float:left;
+    list-style: none;
+    margin: 0;
+    width:5.558%;
+    height: 100%;
+}
+.carrousel_inner ul{
+    margin:0;
+    padding:0;
+    width: 300%;
+    overflow:hidden;
+    height: 100%;
+}
+.carrousel_inner{
+    /* border:1px solid red; */
+    float:left;
+    height:210px;
+    overflow: hidden;
+  	width: 95.54%;
+}
+.carrousel_left, .carrousel_right{
+    height: 210px;
+    width:30px;
+    float:left;
+}
+.carrousel_left{
+    background: url(nav_left.gif) no-repeat  left top;
+    border-bottom-left-radius: 20px; 
+    border-top-left-radius: 20px; 
+}
+.carrousel_left:hover{
+    background:url("nav_left.gif") no-repeat scroll -50px top transparent
+    border-bottom-left-radius: 20px; 
+    border-top-left-radius: 20px; 
+}
+.carrousel_right{
+    background: url(nav_right.gif) no-repeat right top;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+.carrousel_right:hover{
+    background: url(nav_right.gif) no-repeat -70px top;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+.left_inactive,.left_inactive:hover{
+    background: url(nav_left.gif) no-repeat -100px top;
+    border-bottom-left-radius: 20px; 
+    border-top-left-radius: 20px; 
+}
+.right_inactive,.right_inactive:hover{
+    background: url(nav_right.gif) no-repeat -20px top;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+.carrousel{
+    height: 210px;
+    margin: 2% auto;
+    
+}
