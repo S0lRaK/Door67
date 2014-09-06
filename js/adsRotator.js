@@ -6,7 +6,7 @@
 $(document).ready(function(){
     $('.carrousel_right').click(function(){
         var elementsCount=$('carrousel_inner ul li').size();
-        var width=$('#first1').width() + 6;
+        var width=$('#first1').width() + 2;
         var position =$('.carrousel').attr('data-pos');
         position=parseInt(position, 10);
         var elementsCount=$('.carrousel ul li').size();
@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
 
     $('.carrousel_left').click(function(){
-    	var width=$('#first1').width() + 6;
+    	var width=$('#first1').width() + 2;
         var position =$('.carrousel').attr('data-pos');
         var elementsCount=$('carrousel_inner ul li').size();
         position=parseInt(position, 10);

@@ -1,10 +1,16 @@
 .carrousel_inner ul li a img{
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    -webkit-filter: grayscale(100%);
+	/* transition-timing-function property */
+	-webkit-transition: all 1s ease-out;	/* ease-out	Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1)) */
+       -moz-transition: all 1s ease-out;
+         -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+            transition: all 1s ease-out;
 }
 .carrousel_inner ul li a img:hover{
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    -webkit-filter: grayscale(0%);
 }
 .carrousel_inner ul li{
     float:left;
@@ -33,34 +39,38 @@
     float:left;
 }
 .carrousel_left{
-    background: url(nav_left.gif) no-repeat  left top;
+    background: url("nav_left.gif") no-repeat left top;
     border-bottom-left-radius: 20px; 
     border-top-left-radius: 20px; 
 }
 .carrousel_left:hover{
-    background:url("nav_left.gif") no-repeat scroll -50px top transparent
+	cursor: pointer;
+    background:url("nav_left.gif") no-repeat scroll -50px top transparent;
     border-bottom-left-radius: 20px; 
     border-top-left-radius: 20px; 
 }
 .carrousel_right{
-    background: url(nav_right.gif) no-repeat right top;
+    background: url("nav_right.gif") no-repeat right top;
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px; 
 }
 .carrousel_right:hover{
-    background: url(nav_right.gif) no-repeat -70px top;
+    background: url("nav_right.gif") no-repeat -70px top;
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px; 
+    cursor: pointer;
 }
 .left_inactive,.left_inactive:hover{
-    background: url(nav_left.gif) no-repeat -100px top;
+    background: url("nav_left.gif") no-repeat -100px top;
     border-bottom-left-radius: 20px; 
     border-top-left-radius: 20px; 
+    cursor: default;
 }
 .right_inactive,.right_inactive:hover{
-    background: url(nav_right.gif) no-repeat -20px top;
+    background: url("nav_right.gif") no-repeat -20px top;
     border-bottom-right-radius: 20px; 
     border-top-right-radius: 20px; 
+    cursor: default;
 }
 .carrousel{
     height: 210px;
