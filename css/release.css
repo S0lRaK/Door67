@@ -17,20 +17,18 @@
     float:left;
     list-style: none;
     margin: 0;
-    width:5.558%;
     height: 100%;
 }
 .carrousel_inner ul{
     margin:0;
     padding:0;
-    width: 300%;
     overflow:hidden;
     height: 100%;
 }
 .carrousel_inner{
     /* border:1px solid red; */
     float:left;
-    height:210px;
+    height: 210px;
     overflow: hidden;
   	width: 95.54%;
 }
