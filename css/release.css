@@ -30,7 +30,7 @@
     float:left;
     height: 210px;
     overflow: hidden;
-  	width: 95.54%;
+  	width: 95.4%;
 }
 .carrousel_left, .carrousel_right{
     height: 210px;
@@ -73,6 +73,6 @@
 }
 .carrousel{
     height: 210px;
-    margin: 2% auto;
-    
+    margin: 2% 0.55%;
+   
 }
