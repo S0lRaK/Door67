@@ -19,6 +19,21 @@ body{
 }
 .divArtist{
 	text-align: center;
+	display:block;
+}
+
+#divArtists .row:nth-child(1){
+	margin: 0% 2%;
+}
+#divArtists .row:nth-child(2){
+	margin: 0% 5%;
+}
+
+#divArtists .row:nth-child(1) .divArtist{
+	padding-bottom: 1%;
+}
+#divArtists .row:nth-child(2) .divArtist{
+	padding-bottom: 1%;
 }
 #divArtists{
 	height: 100%;
@@ -35,9 +50,8 @@ body{
 .closeImage{
 	border-radius: 6px;
 	width: 40px;
-	position: absolute;
-	top: 1%;
-	right: 2%;
+	position: relative;
+	right: 0%;
 }
 
 .closeImage:hover{

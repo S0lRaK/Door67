@@ -29,7 +29,6 @@ $(document).ready(function(){
 			$(this).append(img);
 			if (activePosition == 1){
 				$(this).parent().append($(this));
-				//$("img[pos=" + (activePosition - 2) + "]").before($(this).append(img));
 			}
 			else if(activePosition == 2){
 				if(activePosition == noActivePosition + 1){

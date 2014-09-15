@@ -11,11 +11,11 @@ $(document).ready(function(){
 	
 	function selectArtistClick(){
 		$(".imgArtist").click(function(){
-			var artistName = $(this).parent().parent().attr("artistname");
+			var artistName = $(this).parent().attr("artistname");
 			$("#divArtists").fadeOut("slow", function(){
 				$(this).parent().append("<div id='infoArtist'></div>");
-				$("#infoArtist").append("<h1 style='margin: 0px'>" + artistName  + "</h1>");
-				$("#infoArtist").append("<img src='img/closeIcon.png' class='closeImage'/>");
+				$("#infoArtist").append("<div class='row'><div class='col-md-11'><h1 style='margin: 0px'>" + artistName  + "</h1></div><div class='col-md-1'><img src='img/closeIcon.png' class='closeImage'/></div></div>");
+				//$("#infoArtist").append("<img src='img/closeIcon.png' class='closeImage'/>");
 				if(artistName == "Gustavho Bacilo"){
 					$("#infoArtist").append(Artists.Gustavho);
 				}
