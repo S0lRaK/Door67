@@ -1,6 +1,9 @@
 ﻿body {
     font-family: Verdana;
     color: #999;
+    background: url('../img/textures/congruent_outline.png');
+}
+#header {
     background-color: #F8F8F8;
 }
 /* Contenedor General */
