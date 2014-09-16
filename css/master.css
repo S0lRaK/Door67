@@ -66,15 +66,20 @@ button {
 }
 .frontRelease img {
     max-height: 200px;
+    margin: auto;
 }
 .infoRelease {
-    padding: 14% 5%;
+    padding: 8% 2%;
+}
+.numRelease {
+    font-weight: bold;
+    font-size: 16px;
 }
 .titleRelease {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 16px;
 	margin-bottom: 2px;
 }
 .artistRelease {
-	font-size: 10px;
+	font-size: 14px;
 }
